@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.oasp.java</groupId>
+        <artifactId>oasp4j-example-spring-boot-application</artifactId>
+        <version>1.0.0-BOOT-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>oasp4j-boot-restaurant</artifactId>
+    <version>${oasp4j.version}</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+        </dependency>
+        <!-- JAX-RS API for REST services-->
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxws</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>asm</groupId>
+                    <artifactId>asm</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.jaxrs</groupId>
+            <artifactId>jackson-jaxrs-json-provider</artifactId>
+        </dependency>
+
+        <!-- Database -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>1.1.9.RELEASE</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.oasp.java</groupId>
+            <artifactId>oasp4j-beanmapping</artifactId>
+            <version>${oasp4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.oasp.java</groupId>
+            <artifactId>oasp4j-jpa</artifactId>
+            <version>${oasp4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.oasp.java</groupId>
+            <artifactId>oasp4j-web</artifactId>
+            <version>${oasp4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.oasp.java</groupId>
+            <artifactId>oasp4j-security</artifactId>
+            <version>${oasp4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.oasp.java</groupId>
+            <artifactId>oasp4j-rest</artifactId>
+            <version>${oasp4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.oasp.java</groupId>
+            <artifactId>oasp4j-logging</artifactId>
+            <version>${oasp4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.oasp.java</groupId>
+            <artifactId>oasp4j-monitoring</artifactId>
+            <version>${oasp4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.m-m-m</groupId>
+            <artifactId>mmm-util-core</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>
