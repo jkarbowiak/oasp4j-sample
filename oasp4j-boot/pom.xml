@@ -10,7 +10,7 @@
     </parent>
 
     <artifactId>oasp4j-boot</artifactId>
-    <version>${oasp4j.version}</version>
+    <version>${oasp4j.boot.version}</version>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>

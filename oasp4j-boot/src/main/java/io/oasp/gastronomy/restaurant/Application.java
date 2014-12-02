@@ -15,8 +15,6 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.web.servlet.DispatcherServlet;
 
-import java.util.Collections;
-
 @Configuration
 @EnableAutoConfiguration
 @Import(CxfConfigurator.class)

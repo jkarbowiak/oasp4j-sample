@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>oasp4j-boot-restaurant</artifactId>
-    <version>${oasp4j.version}</version>
+    <version>${oasp4j.boot.version}</version>
 
     <dependencies>
         <dependency>
